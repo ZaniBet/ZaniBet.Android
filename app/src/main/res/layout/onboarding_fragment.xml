@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/onboarding1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:id="@+id/titleTextView"
+        android:text="@string/onboarding1_title"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/futuris_bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@color/colorCloud"
+        android:id="@+id/descriptionTextView"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:text="@string/onboarding1_content"
+        android:fontFamily="@font/helveticaneue_roman"/>
+
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textAllCaps="true"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_textSize="16sp"
+        fancy:mfb_text="@string/play"
+        fancy:mfb_defaultColor="@color/colorPrimary"
+        fancy:mfb_focusColor="@color/colorPrimaryDark"
+        fancy:mfb_disabledColor="@color/colorCloud"
+        fancy:mfb_textColor="@color/colorWhite"
+        android:visibility="invisible"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="40dp"></View>
+
+</LinearLayout>

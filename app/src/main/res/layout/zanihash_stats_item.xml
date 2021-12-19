@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/transparent_bordered_view">
+        <ImageView
+            android:src="@drawable/ic_zanihash"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/zanihashTextView"
+            android:textColor="@color/colorElectromagnetic"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:text="@string/zanihash_wallet"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/transparent_bordered_view">>
+        <ImageView
+            android:src="@drawable/ic_zanihash_coin"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:id="@+id/totalZanihashTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorElectromagnetic"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:text="@string/zanihash_since_registration"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTranslucentWhite50">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/colorElectromagnetic"
+            android:text="@string/zanihash_transactions"
+            android:fontFamily="@font/helveticaneue_medium"/>
+    </LinearLayout>
+</LinearLayout>

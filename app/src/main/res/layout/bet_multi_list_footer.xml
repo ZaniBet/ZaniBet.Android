@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteLynx"
+    android:padding="16dp">
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="8dp"
+        fancy:mfb_radius="25dp"
+        fancy:mfb_text="@string/validate"
+        fancy:mfb_defaultColor="@color/colorPrimary"
+        fancy:mfb_focusColor="@color/colorPrimaryDark"
+        fancy:mfb_disabledColor="@color/colorCloud"
+        fancy:mfb_textColor="@color/colorWhite"
+        fancy:mfb_textAllCaps="true"
+        fancy:mfb_textGravity="center"
+        />
+
+</LinearLayout>

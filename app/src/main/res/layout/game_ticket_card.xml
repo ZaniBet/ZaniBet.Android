@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:elevation="3dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/coverImageView"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ticket_tournament_placeholder"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/competitionTextView"
+                android:fontFamily="@font/scornoheavy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIGUE 1 CONFORAMA"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/matchDayTextView"
+                android:fontFamily="@font/futuris_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JOURNÉE 16"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        tools:style="@style/CardView"
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-20dp"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:fontFamily="@font/futuris_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="23dp"
+                android:text="DATE"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 MATCH"
+                android:fontFamily="@font/futuris_bold"
+                android:textAllCaps="true"
+                android:textColor="@color/colorElectromagnetic"
+                android:id="@+id/countMatchTextView"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/strip_small_separator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/strip_background"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_euro_coin" />
+
+                        <TextView
+                            android:id="@+id/cashTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/helveticaneue_roman"
+                            android:textColor="@color/colorElectromagnetic"
+                            android:text="@string/reward_share"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_table_football" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/remainingPlayTextView"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/ticket_playable_grid"
+                            android:textColor="@color/colorElectromagnetic"
+                            android:fontFamily="@font/helveticaneue_roman"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/playButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/helveticaneue_medium"
+                fancy:mfb_defaultColor="@color/colorPrimary"
+                fancy:mfb_disabledColor="@color/colorCloud"
+                fancy:mfb_focusColor="@color/colorPrimaryDark"
+                fancy:mfb_radius="30dp"
+                fancy:mfb_text="@string/play"
+                fancy:mfb_textColor="@color/colorWhite"
+                fancy:mfb_textSize="16sp" />
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/calendarButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/helveticaneue_medium"
+                fancy:mfb_defaultColor="@color/colorBlue500"
+                fancy:mfb_disabledColor="@color/colorCloud"
+                fancy:mfb_focusColor="@color/colorBlue800"
+                fancy:mfb_radius="30dp"
+                fancy:mfb_text="@string/calendar"
+                fancy:mfb_textColor="@color/colorWhite"
+                fancy:mfb_textSize="12sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

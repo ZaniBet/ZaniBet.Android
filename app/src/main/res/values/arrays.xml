@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ranking_filter">
+        <item>Global</item>
+        <item>Domicile</item>
+        <item>Extérieur</item>
+    </string-array>
+
+    <string-array name="payment_method">
+        <item>PayPal</item>
+        <item>Bitcoin</item>
+    </string-array>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".RegisterActivity">
+    <include layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/futuris_bold"
+                />
+
+            <EditText
+                android:id="@+id/pseudoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/light_green_rounded_input"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:hint="@string/username"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColorHint="@color/colorCloud"
+                android:textColor="@color/colorCloud"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:tag="edit_username"
+                />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/light_green_rounded_input"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/email_address"
+                android:tag="edit_email"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorCloud"
+                android:textColor="@color/colorCloud"
+                android:fontFamily="@font/helveticaneue_roman"
+                />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@drawable/light_green_rounded_input"
+                android:hint="@string/password"
+                android:tag="edit_password"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorCloud"
+                android:textColor="@color/colorCloud"
+                android:fontFamily="@font/helveticaneue_roman"
+                />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:background="@drawable/transparent_bordered_button"
+                android:textColor="@color/colorWhite"
+                android:text="@string/signup"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="8dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@color/colorCloud"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textAllCaps="true"
+                android:textColor="@color/colorCloud"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@color/colorCloud"
+                />
+        </LinearLayout>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookButton"
+            android:layout_width="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorCloud"
+            />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/already_signup"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:fontFamily="@font/helveticaneue_medium"
+            />
+    </LinearLayout>
+</RelativeLayout>

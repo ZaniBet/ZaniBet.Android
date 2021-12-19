@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="smallCircleColor">#A5D6A7</color>
+    <color name="largeCircleColor">#81C784</color>
+    <color name="outerCircleColor">#66BB6A</color>
+</resources>

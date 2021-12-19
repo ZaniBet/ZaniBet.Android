@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteLynx"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_weight="5"
+            fancy:mfb_radius="30dp"
+            fancy:mfb_defaultColor="@color/colorRed600"
+            fancy:mfb_focusColor="@color/colorRed800"
+            android:layout_marginEnd="4dp"
+            fancy:mfb_text="@string/clear"/>
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:id="@+id/flashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_weight="5"
+            fancy:mfb_defaultColor="@color/colorBlue600"
+            fancy:mfb_focusColor="@color/colorBlue800"
+            fancy:mfb_text="Flash"
+            fancy:mfb_radius="30dp"
+
+            />
+    </LinearLayout>
+    <!--<Button
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VALIDER MA GRILLE"
+        android:textColor="@color/colorWhite"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />-->
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="8dp"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_borderColor="#FFFFFF"
+        fancy:mfb_borderWidth="1dp"
+        fancy:mfb_text="@string/validate_grid"
+        fancy:mfb_defaultColor="@color/colorPrimary"
+        fancy:mfb_focusColor="@color/colorPrimaryDark"
+        fancy:mfb_disabledColor="@color/colorCloud"
+        fancy:mfb_textColor="@color/colorWhite"
+
+        />
+
+</LinearLayout>

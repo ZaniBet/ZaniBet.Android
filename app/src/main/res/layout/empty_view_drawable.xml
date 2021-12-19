@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/empty_layout"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    android:nestedScrollingEnabled="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:layout_margin="16dp"
+        android:background="@color/colorTranslucentWhite30">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_textview"
+            android:text="EMPTY"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

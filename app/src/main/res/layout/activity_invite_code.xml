@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="eu.devolios.zanibet.InviteCodeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/invitationWelcomeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/colorElectromagnetic"
+                android:text="@string/invitation_welcome"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:textAlignment="center"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/invitationCodeInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/invitationCodeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_invite_code"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/validateCodeButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                fancy:mfb_defaultColor="@color/colorPrimary"
+                fancy:mfb_disabledColor="@color/colorCloud"
+                fancy:mfb_focusColor="@color/colorPrimaryDark"
+                fancy:mfb_radius="30dp"
+                fancy:mfb_text="@string/validate"
+                fancy:mfb_textColor="@color/colorWhite"
+                fancy:mfb_textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

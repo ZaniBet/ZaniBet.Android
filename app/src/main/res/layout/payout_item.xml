@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground"
+    >
+
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/iconImageView"/>
+
+    <TextView
+        android:id="@+id/payoutTypeTextView"
+        android:paddingLeft="72dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/colorElectromagnetic"
+        android:fontFamily="@font/helveticaneue_medium"
+        />
+
+    <TextView
+        android:id="@+id/payoutDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payoutTypeTextView"
+        android:text="Résultat le :"
+        android:paddingLeft="72dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorBangGrey"
+        android:fontFamily="@font/helveticaneue_light"
+        />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payoutDateTextView"
+        android:text="Status :"
+        android:paddingLeft="72dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorElectromagnetic"
+        android:fontFamily="@font/helveticaneue_light"
+        />
+
+    <TextView
+        android:id="@+id/payoutAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/payoutTypeTextView"
+        android:textStyle="bold"
+        android:text="- €"
+        android:textSize="14sp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/colorElectromagnetic"
+        android:fontFamily="@font/helveticaneue_medium"
+        />
+
+    <ImageView
+        android:id="@+id/decoratorImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        />
+</RelativeLayout>

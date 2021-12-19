@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allattentionhere.fabulousfilter.AAH_FilterView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"
+        tools:ignore="MissingPrefix"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_one"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhiteLynx"
+                android:textSize="16sp"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:text="Filtrer"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleLayout"
+            android:background="@color/colorTranslucentWhite30"
+            android:orientation="vertical"
+            android:layout_margin="4dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textColor="@color/colorWhiteLynx"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:fontFamily="@font/helveticaneue_medium"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/statusRadioGroup"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pendingRadio"
+                    android:text="@string/pending"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:padding="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:button="@null"
+                    android:textColor="@color/colorWhite"
+                    android:tag="pending"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lostRadio"
+                    android:text="@string/lost"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:padding="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:button="@null"
+                    android:textColor="@color/colorWhite"
+                    android:tag="lost"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/winRadio"
+                    android:text="@string/win"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:button="@null"
+                    android:tag="win"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusLayout"
+            android:background="@color/colorTranslucentWhite30"
+            android:orientation="vertical"
+            android:layout_margin="4dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reward"
+                android:textColor="@color/colorWhiteLynx"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:fontFamily="@font/helveticaneue_medium"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/currencyRadioGroup"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zanihashRadio"
+                    android:text="ZaniHash"
+                    android:padding="8dp"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/chip_unselected"
+                    android:button="@null"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:tag="zanihash"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zanicoinRadio"
+                    android:text="ZaniCoins"
+                    android:tag="zanicoin"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:button="@null"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhiteLynx"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+            <ImageButton
+                android:id="@+id/resetButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_reset"
+                android:scaleType="fitCenter"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                />
+
+            <ImageButton
+                android:id="@+id/confirmButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_confirm"
+                android:scaleType="fitCenter"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.allattentionhere.fabulousfilter.AAH_FilterView>

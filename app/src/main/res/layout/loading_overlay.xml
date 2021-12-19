@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progressLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTranslucentWhite30"
+    android:clickable="true"
+    android:elevation="3dp"
+    android:focusable="true">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleX="0.10"
+        android:scaleY="0.10"
+        android:textColor="@color/colorAccent"
+        />
+</RelativeLayout>

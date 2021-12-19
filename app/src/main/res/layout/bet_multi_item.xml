@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorTranslucentWhite50"
+        >
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futuris_bold"
+            android:padding="8dp"
+            android:text="Description"
+            android:textColor="@color/colorElectromagnetic"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/betRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/choiceOneRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            />
+
+        <RadioButton
+            android:id="@+id/choiceTwoRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/separatorView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            />
+        <RadioButton
+            android:id="@+id/choiceThreeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <TextView
+            android:id="@+id/choiceOneTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:textColor="@color/colorElectromagnetic"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/choiceTwoTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:textColor="@color/colorElectromagnetic"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/choiceThreeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:textAlignment="center"
+            android:textColor="@color/colorElectromagnetic"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

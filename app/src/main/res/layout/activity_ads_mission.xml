@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="eu.devolios.zanibet.AdsMissionActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:background="@color/colorWhiteLynx"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/transparent_bordered_view"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_zani_chips" />
+
+                <TextView
+                    android:id="@+id/missionDescTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="@string/jeton_task_desc"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/transparent_bordered_view"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/jetonAdsTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futuris_bold"
+                    android:text="Obtenir 6 jetons"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/moreJetonButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:textAllCaps="true"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_disabledColor="@color/colorCloud"
+                    fancy:mfb_focusColor="@color/colorPrimaryDark"
+                    fancy:mfb_radius="30dp"
+                    fancy:mfb_text="@string/watch_a_video"
+                    fancy:mfb_textColor="@color/colorWhite"
+                    fancy:mfb_textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/jetonAdsLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="Cette option est valable une fois par jour."
+                    android:textAlignment="center"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pollfishLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/transparent_bordered_view"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futuris_bold"
+                    android:text="@string/ads_pollfish_title"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pollfishDescTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="@string/ads_pollfish_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:textSize="13sp" />
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/pollfishButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:textAllCaps="true"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_disabledColor="@color/colorCloud"
+                    fancy:mfb_focusColor="@color/colorPrimaryDark"
+                    fancy:mfb_radius="30dp"
+                    fancy:mfb_text="Pollfish"
+                    fancy:mfb_textColor="@color/colorWhite"
+                    fancy:mfb_textSize="16sp" />
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/transparent_bordered_view"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futuris_bold"
+                    android:text="@string/do_a_task"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="@string/task_desc"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:textSize="13sp" />
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/adscendButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_disabledColor="@color/colorCloud"
+                    fancy:mfb_focusColor="@color/colorPrimaryDark"
+                    fancy:mfb_radius="30dp"
+                    fancy:mfb_text="Adscend"
+                    fancy:mfb_textColor="@color/colorWhite"
+                    fancy:mfb_textSize="16sp" />
+
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/transparent_bordered_view"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futuris_bold"
+                    android:text="@string/more_chips_zanihash_title"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryAnalogous2"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="@string/more_chips_zanihash"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/transparent_bordered_view">
+                <LinearLayout
+                    android:id="@+id/native_ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

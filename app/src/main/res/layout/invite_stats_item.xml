@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite">
+        <ImageView
+            android:src="@drawable/ic_team_barrier"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/amountInvitedTextView"
+            android:textColor="@color/colorElectromagnetic"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:text="@string/amount_invited"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorTranslucentWhite50"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite">>
+        <ImageView
+            android:src="@drawable/ic_soccer_mobile_app"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+        <TextView
+            android:id="@+id/amountTransactionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorElectromagnetic"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:text="@string/amount_transaction"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorTranslucentWhite50"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:background="@color/colorWhite">
+        >
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_zanicoin"/>
+        <TextView
+            android:id="@+id/totalEarningTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorElectromagnetic"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:text="@string/invitation_earning"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTranslucentWhite30">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/colorElectromagnetic"
+            android:text="@string/last_referral_transaction"
+            android:fontFamily="@font/helveticaneue_medium"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/flagImageView"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:src="@drawable/europe_flag_round"
+        />
+
+    <TextView
+        android:id="@+id/countryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Europe"
+        android:fontFamily="@font/futuris_light"
+        android:textColor="@color/colorElectromagnetic"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="4"/>
+
+    <ImageView
+        android:id="@+id/chevronImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chevron_down"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_help"
+        android:title="Help"
+        app:showAsAction="ifRoom"/>
+    <!-- <item android:id="@+id/action_filter"
+        android:title="Filter"
+        app:showAsAction="always"/> -->
+    <!--<item
+        android:title="Item"
+        app:showAsAction="always"
+        >
+        <group android:id="@+id/group1">
+            <item android:id="@+id/item7" android:title="Item 4.1"></item>
+            <item android:id="@+id/item8" android:title="Item 4.2"></item>
+        </group>
+    </item>-->
+
+</menu>

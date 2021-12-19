@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhiteLynx"
+    tools:context="eu.devolios.zanibet.AdsMissionActivity">
+
+    <ScrollView
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:background="@drawable/transparent_bordered_view"
+                android:padding="8dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gestionnaire de votre compte"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/futuris_bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="En cas de problèmes ou questions, vous avez la possibilité de prendre contact directement avec le gestionnaire de votre compte."
+                    />
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:src="@drawable/ic_manager"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/managerNameTextView"
+                        android:textColor="@color/colorElectromagnetic"
+                        android:fontFamily="@font/helveticaneue_roman"
+                        android:text=""/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:src="@drawable/ic_skype"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/managerSkypeTextView"
+                        android:textColor="@color/colorElectromagnetic"
+                        android:fontFamily="@font/helveticaneue_roman"
+                        android:text=""/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:src="@drawable/ic_gmail"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/managerEmailTextView"
+                        android:textColor="@color/colorElectromagnetic"
+                        android:fontFamily="@font/helveticaneue_roman"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:background="@drawable/transparent_bordered_view"
+                android:padding="8dp"
+                android:elevation="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Avantages"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/futuris_bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="En tant qu'ambassadeur privilégié de ZaniBet vous bénéficiez vous et vos filleuls d'avantages uniques."
+                    />
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/advantageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_disabledColor="@color/colorCloud"
+                    fancy:mfb_focusColor="@color/colorPrimaryDark"
+                    fancy:mfb_radius="30dp"
+                    fancy:mfb_text="Mes avantages"
+                    fancy:mfb_textColor="@color/colorWhite"
+                    fancy:mfb_textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:background="@drawable/transparent_bordered_view"
+                android:padding="8dp"
+                android:elevation="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Statistiques invités"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/futuris_bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="Suivez l'évolution du nombres d'utilisateurs que vous avez invité."
+                    />
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/invitedStatsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_disabledColor="@color/colorCloud"
+                    fancy:mfb_focusColor="#5f9496"
+                    fancy:mfb_radius="30dp"
+                    fancy:mfb_text="Afficher les statistiques"
+                    fancy:mfb_textColor="@color/colorWhite"
+                    fancy:mfb_textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:background="@drawable/transparent_bordered_view"
+                android:padding="8dp"
+                android:elevation="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revenus détaillés"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/futuris_bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="Consulter les actions effectuées par vos invités, qui vous rapportes le plus de ZaniCoins."
+                    />
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/revenuStatsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_disabledColor="@color/colorCloud"
+                    fancy:mfb_focusColor="#5f9496"
+                    fancy:mfb_radius="30dp"
+                    fancy:mfb_text="Afficher les statistiques"
+                    fancy:mfb_textColor="@color/colorWhite"
+                    fancy:mfb_textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

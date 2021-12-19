@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jetonTextView"
+        android:text="- Jetons"
+        android:textSize="14sp"
+        android:textColor="@color/colorElectromagnetic"
+        android:fontFamily="@font/futuris_bold"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jetonDescTextView"
+        android:layout_marginTop="4dp"
+        android:text="@string/jeton_desc"
+        android:textSize="12sp"
+        android:fontFamily="@font/helveticaneue_roman"
+        android:textAlignment="center"
+        android:textColor="@color/colorBangGrey"
+        />
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/moreJetonButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="true"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_borderColor="#FFFFFF"
+        fancy:mfb_borderWidth="1dp"
+        fancy:mfb_text="@string/btn_get_more_jeton"
+        fancy:mfb_defaultColor="@color/colorPrimary"
+        fancy:mfb_focusColor="@color/colorPrimaryDark"
+        fancy:mfb_disabledColor="@color/colorCloud"
+        fancy:mfb_textColor="@color/colorWhite"
+        />
+
+</LinearLayout>

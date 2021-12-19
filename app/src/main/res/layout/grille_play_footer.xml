@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteLynx"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/referenceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_light"
+        android:textColor="@color/colorBlack"
+        android:text="Date de création :"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/createdAtTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_light"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/updateAtTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_light"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/helveticaneue_light"
+        android:textColor="@color/colorBlack"
+        android:text="@string/grid_help"
+        android:textSize="12sp"
+        />
+</LinearLayout>

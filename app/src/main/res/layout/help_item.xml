@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground"
+    >
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:paddingStart="16dp"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_babyfoot"
+        />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:paddingStart="72dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TITRE"
+        android:textColor="@color/colorElectromagnetic"
+        android:fontFamily="@font/futuris_bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/captionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:text="SOUS TITRE"
+        android:textColor="@color/colorBangGrey"
+        android:fontFamily="@font/futuris_light"
+        android:paddingStart="72dp"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/decoratorImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        />
+</RelativeLayout>

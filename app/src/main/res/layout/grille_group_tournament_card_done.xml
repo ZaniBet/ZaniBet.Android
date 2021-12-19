@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ticket_tournament_placeholder"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIGUE 1 CONFORAMA"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/competitionTextView"
+                android:textAllCaps="true"
+                android:fontFamily="@font/scornoheavy"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JOURNÉE 16"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/dateTextView"
+                android:fontFamily="@font/futuris_light"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottomView"
+        android:layout_below="@id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-20dp"
+        card_view:cardElevation="4dp"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardCornerRadius="2dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/grillesDescTextView"
+                android:text=""
+                android:textColor="@color/colorElectromagnetic"
+                android:fontFamily="@font/helveticaneue_roman"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                >
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBlack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/reward"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/futuris_bold"
+                    android:textAllCaps="true"/>
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBlack"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_football_player" />
+
+                    <TextView
+                        android:id="@+id/amountPlayersTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Grilles"
+                        android:lines="2"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textColor="@color/colorElectromagnetic"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_rank"/>
+                    <TextView
+                        android:id="@+id/rankTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textAllCaps="true"
+                        android:text="0"
+                        android:textColor="@color/colorElectromagnetic"
+                        android:textAlignment="center"
+                        android:lines="2"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/rewardImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_zanicoin"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/colorElectromagnetic"
+                        android:text="200€"
+                        android:lines="2"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:id="@+id/rewardTextView"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

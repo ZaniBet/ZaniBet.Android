@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/zanibet_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signin"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/futuris_bold"
+                />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/light_green_rounded_input"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:hint="@string/email_address"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorCloud"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:textColor="@color/colorWhite"
+                />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@drawable/light_green_rounded_input"
+                android:hint="@string/password"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorCloud"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:textColor="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/transparent_bordered_button"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:text="@string/signin"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/forgotPasswordButton"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="14sp"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:textColor="@color/colorWhite"
+                android:text="@string/forgot_password"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="8dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@color/colorCloud"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/colorCloud"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@color/colorCloud"
+                />
+        </LinearLayout>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookButton"
+            android:layout_width="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorCloud"
+            />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:text="@string/create_new_account"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

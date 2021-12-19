@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:williamchart="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chart_card"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:layout_margin="1dp"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <ImageView
+            android:id="@+id/teamImageView"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/zanibet_logo"/>
+
+        <TextView
+            android:id="@+id/teamTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:textColor="@color/colorElectromagnetic"
+            android:text=""/>
+
+        <com.db.chart.view.BarChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            williamchart:chart_axis="false"
+            williamchart:chart_barSpacing="15dp"
+            williamchart:chart_cornerRadius="1dp"
+            williamchart:chart_fontSize="10sp"
+            williamchart:chart_labelColor="@color/colorElectromagnetic" />
+    </LinearLayout>
+</FrameLayout>

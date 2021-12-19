@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.devolios.zanibet.PartnerBonusActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhiteLynx"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/futuris_bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/colorElectromagnetic"
+                android:textAllCaps="true"
+                android:textSize="17sp"
+                android:text="Vos avatanges"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/transparent_bordered_view">
+                <ImageView
+                    android:src="@drawable/ic_coins"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/coinMultiTextView"
+                    android:textColor="@color/colorBangGrey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/transparent_bordered_view">
+                <ImageView
+                    android:src="@drawable/ic_coins"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coinSimpleTextView"
+                    android:layout_marginStart="8dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/transparent_bordered_view">
+                <ImageView
+                    android:src="@drawable/ic_coins"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:id="@+id/coinPercentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+                />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/futuris_bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textAllCaps="true"
+                android:textSize="17sp"
+                android:textColor="@color/colorElectromagnetic"
+                android:text="Avantages de vos invités"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/transparent_bordered_view">
+                <ImageView
+                    android:src="@drawable/ic_coins"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:id="@+id/invitedRewardTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/competitionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorElectromagnetic"
+            android:fontFamily="@font/futuris_bold"
+            android:textSize="13sp"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/zanibet_logo"
+                android:id="@+id/homeTeamImageView"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/homeTeamTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:text="PSG"
+                android:textAlignment="center"
+                android:textColor="@color/colorElectromagnetic"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/futuris_bold"
+                android:id="@+id/scoreTextView"
+                android:textColor="@color/colorElectromagnetic"
+                android:text="VS"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/awayTeamImageView"
+                android:src="@drawable/zanibet_logo"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/awayTeamTextView"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:textColor="@color/colorElectromagnetic"
+                android:textAlignment="center"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/colorTranslucentWhite30"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="1dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/betRadioGroup"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeRadioButton"
+            android:text="1"
+            android:gravity="center"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bet_radio_button"
+            android:button="@null"
+            android:textColor="@color/colorWhite"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/equalRadioButton"
+            android:text="N"
+            android:gravity="center"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bet_radio_button"
+            android:button="@null"
+            android:textColor="@color/colorWhite"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/awayRadioButton"
+            android:text="2"
+            android:gravity="center"
+            android:background="@drawable/bet_radio_button"
+            android:button="@null"
+            android:textColor="@color/colorWhite"
+
+            />
+
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/colorTranslucentWhite30"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/pointsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:textColor="@color/colorElectromagnetic"
+            android:textSize="14sp"
+            android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>

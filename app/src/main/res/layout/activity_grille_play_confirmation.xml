@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:src="@drawable/grid_confirmation" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorTranslucentWhite50"
+                android:padding="16dp"
+                android:text="@string/confirm_grid_desc"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/confirm_replay_now"
+                android:textAlignment="center" />
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/replayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                fancy:mfb_defaultColor="@color/colorPrimary"
+                fancy:mfb_focusColor="@color/colorPrimaryDark"
+                fancy:mfb_radius="30dp"
+                android:textAllCaps="true"
+                fancy:mfb_text="@string/replay_grid" />
+
+            <TextView
+                android:id="@+id/remainingPlayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorTranslucentWhite50"
+                android:padding="8dp"
+                android:text="Grille jouées :"
+                android:textAlignment="center" />
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="ca-app-pub-1821217367102526/2247485782">
+            </com.google.android.gms.ads.AdView>
+
+            <!-- <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                fancy:mfb_defaultColor="@color/colorBlue600"
+                fancy:mfb_focusColor="@color/colorBlue800"
+                fancy:mfb_radius="30dp"
+                fancy:mfb_text="@string/back"
+                android:visibility="gone"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

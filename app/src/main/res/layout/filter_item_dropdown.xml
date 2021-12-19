@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/transparent_bordered_view">
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/zanibet_logo"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/competitionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Ligue 1" />
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:background="@color/colorWhiteLynx"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhiteLynx"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_zanihash_coin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/analytics_status_title"
+                android:textAllCaps="true"
+                android:fontFamily="@font/futuris_light"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/transparent_bordered_view">
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/analytics_status_activation"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/zanihash_earned_title"
+                android:textAllCaps="true"
+                android:fontFamily="@font/futuris_light"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/transparent_bordered_view">
+                <TextView
+                    android:id="@+id/zanihashTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:fontFamily="@font/futuris_bold"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/tab_stats"
+                android:textAllCaps="true"
+                android:fontFamily="@font/futuris_light"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/transparent_bordered_view">
+                <TextView
+                    android:id="@+id/sessionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Durée de la session"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textAlignment="center"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/hashRateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ZaniHash généré par secondes"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textAlignment="center"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/help"
+                android:textAllCaps="true"
+                android:fontFamily="@font/futuris_light"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/transparent_bordered_view">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_atomic"/>
+                
+                <TextView
+                    android:id="@+id/helpTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/analytics_tips"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textAlignment="center"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/transparent_bordered_view">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_monitor"/>
+
+                <TextView
+                    android:id="@+id/webTipsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/analytics_tips_web"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textAlignment="center"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

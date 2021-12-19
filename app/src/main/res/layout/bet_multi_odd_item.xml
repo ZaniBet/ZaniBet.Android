@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteLynx"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTranslucentWhite50"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futuris_bold"
+            android:textColor="@color/colorElectromagnetic"
+            android:padding="8dp"
+            android:text="Description"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/betRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/choiceOneRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            />
+
+        <RadioButton
+            android:id="@+id/choiceTwoRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/separatorView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            />
+        <RadioButton
+            android:id="@+id/choiceThreeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <TextView
+            android:id="@+id/choiceOneTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:text="days"
+            android:textColor="@color/colorElectromagnetic"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/choiceTwoTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:textColor="@color/colorElectromagnetic"
+            android:text=" days"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/choiceThreeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:textColor="@color/colorElectromagnetic"
+            android:text="7 looong days"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTranslucentWhite50"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futuris_bold"
+            android:textColor="@color/colorElectromagnetic"
+            android:padding="8dp"
+            android:text="@string/fixture_player_choice"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/colorWhite"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/transparent_bordered_view"
+            >
+            <TextView
+                android:id="@+id/choiceOneOddDescTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:background="@color/colorTranslucentWhite50"
+                android:layout_weight="0.3"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/choiceOneOddTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/colorElectromagnetic"
+                android:layout_weight="1"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:background="@drawable/transparent_bordered_view"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/choiceTwoOddDescTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N"
+                android:layout_weight="0.3"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:background="@color/colorTranslucentWhite50"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/choiceTwoOddTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/colorElectromagnetic"
+                android:layout_weight="1"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choiceThreeLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:background="@drawable/transparent_bordered_view"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/choiceThreeOddDescTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:layout_weight="0.3"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:background="@color/colorTranslucentWhite50"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/choiceThreeOddTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/colorElectromagnetic"
+                android:layout_weight="1"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

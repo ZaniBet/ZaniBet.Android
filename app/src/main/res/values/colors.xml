@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimary50">#E8F5E9</color>
+    <color name="colorPrimary100">#C8E6C9</color>
+    <color name="colorPrimaryAnalogous1">#4cacaf</color>
+    <color name="colorPrimaryAnalogous2">#7caf4c</color>
+
+    <color name="colorPrimaryDark">#2E7D32</color>
+    <color name="colorPrimaryLight">#80e27e</color>
+    <color name="colorAccent">#1B5E20</color>
+
+    <color name="colorCloud">#ecf0f1</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorLightGreen300">#AED581</color>
+    <color name="colorLightGreen400">#9CCC65</color>
+    <color name="colorLightGreen500">#8BC34A</color>
+    <color name="colorLightGreen600">#7CB342</color>
+    <color name="colorLightGreen800">#558B2F</color>
+
+    <color name="colorRed100">#FFCDD2</color>
+    <color name="colorRed300">#E57373</color>
+    <color name="colorRed400">#EF5350</color>
+    <color name="colorRed500">#F44336</color>
+    <color name="colorRed600">#E53935</color>
+    <color name="colorRed800">#C62828</color>
+
+    <color name="colorBlue500">#2196F3</color>
+    <color name="colorBlue600">#1E88E5</color>
+    <color name="colorBlue700">#1976D2</color>
+    <color name="colorBlue800">#1565C0</color>
+
+    <color name="colorAmber100">#FFECB3</color>
+    <color name="colorAmber500">#FFC107</color>
+    <color name="colorAmber700">#FFA000</color>
+    <color name="colorAmber800">#FF8F00</color>
+
+    <color name="colorOrange500">#FF9800</color>
+    <color name="colorOrange700">#F57C00</color>
+    <color name="colorOrange800">#EF6C00</color>
+
+    <color name="colorPensiveGray">#dcdde1</color>
+    <!-- <color name="colorWhiteLynx">#f5f6fa</color>-->
+    <color name="colorWhiteLynx">#ffffff</color>
+    <color name="colorElectromagnetic">#2f3640</color>
+    <color name="colorBangGrey">#718093</color>
+
+    <color name="colorTranslucentWhite">#15cccccc</color>
+    <color name="colorTranslucentWhite30">#30cccccc</color>
+    <color name="colorTranslucentWhite50">#50cccccc</color>
+
+    <color name="colorTranslucentBlack50">#50000000</color>
+
+
+</resources>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhiteLynx"
+    tools:context=".PayoutRewardDetailsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/payoutImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_paypal_logo"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:text="test"/>
+
+                <TextView
+                    android:id="@+id/descriptionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBangGrey"
+                    android:textSize="14sp"
+                    android:text="test"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:textSize="14sp"
+                    android:text="@string/reference"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/date"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/referenceTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/colorBangGrey"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="Référence"/>
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBangGrey"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="Date"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/price"/>
+
+                <TextView
+                    android:id="@+id/priceTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textColor="@color/colorBangGrey"
+                    android:text="9000 ZC"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/amount"/>
+
+                <TextView
+                    android:id="@+id/amountTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textColor="@color/colorBangGrey"
+                    android:text="1€"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/payment_method"/>
+
+                <TextView
+                    android:id="@+id/paymentMethodTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textColor="@color/colorBangGrey"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/payment_address"/>
+
+                <TextView
+                    android:id="@+id/addressTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textColor="@color/colorBangGrey"
+                    android:text="gromat@gmail.com"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/status"/>
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:textColor="@color/colorBangGrey"
+                    android:text="En attente de paiement"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/statusLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:elevation="2dp"
+                android:background="@drawable/transparent_bordered_view">
+
+                <ImageView
+                    android:id="@+id/statusImageView"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/zanibet_logo"/>
+
+                <TextView
+                    android:id="@+id/statusDescTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

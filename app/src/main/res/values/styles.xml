@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="md_medium_font">helveticaneue_medium.ttf</item>
+        <item name="md_regular_font">helveticaneue_roman.otf</item>
+
+    </style>
+
+    <style name="CustomTheme" parent="android:Theme">
+        <item name="android:radioButtonStyle">@style/RadioButton</item>
+    </style>
+
+    <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/bet_radio_button</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/helveticaneue_roman</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/helveticaneue_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ToolbarOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/helveticaneue_light</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@drawable/gradient_one</item>
+    </style>
+
+
+</resources>

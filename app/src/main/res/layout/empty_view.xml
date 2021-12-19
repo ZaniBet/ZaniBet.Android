@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/empty_layout"
+    android:gravity="center"
+    >
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/icon_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+         />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_textview"
+        android:layout_below="@id/icon_textview"
+        android:text="EMPTY"
+        android:layout_margin="16dp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"/>
+</RelativeLayout>

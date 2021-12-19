@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_tickets"
+        title="@string/tab_play"
+        icon="@drawable/tab_play"/>
+    <tab
+        id="@+id/tab_grille"
+        title="@string/tab_grilles"
+        icon="@drawable/tab_grilles"/>
+    <tab
+        id="@+id/tab_rewards"
+        title="@string/tab_shop"
+        icon="@drawable/tab_reward"/>
+
+    <tab
+        id="@+id/tab_profile"
+        title="@string/tab_profile"
+        icon="@drawable/tab_profile"/>
+</tabs>

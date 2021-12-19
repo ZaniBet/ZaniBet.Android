@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteLynx"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_invite_friends_round"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inviteDescTextView"
+            android:text="@string/invite_friends_desc"
+            android:textAlignment="center"
+            android:textColor="@color/colorElectromagnetic"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:padding="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="@drawable/transparent_bordered_view">
+            <TextView
+                android:id="@+id/inviteCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="@color/colorElectromagnetic"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:id="@+id/editCodeButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="true"
+            fancy:mfb_defaultColor="@color/colorPrimary"
+            fancy:mfb_disabledColor="@color/colorCloud"
+            fancy:mfb_focusColor="@color/colorPrimaryDark"
+            fancy:mfb_radius="30dp"
+            fancy:mfb_text="@string/set_custom_code"
+            fancy:mfb_textColor="@color/colorWhite"
+            fancy:mfb_textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/what_you_win"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorElectromagnetic"
+            android:textSize="15sp"
+            android:fontFamily="@font/futuris_bold"/>
+
+        <TextView
+            android:id="@+id/inviteRewardTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/helveticaneue_roman"
+            android:textColor="@color/colorElectromagnetic"
+            android:text="@string/invite_reward"/>
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:id="@+id/shareButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textAllCaps="true"
+            fancy:mfb_defaultColor="@color/colorPrimary"
+            fancy:mfb_disabledColor="@color/colorCloud"
+            fancy:mfb_focusColor="@color/colorPrimaryDark"
+            fancy:mfb_radius="30dp"
+            fancy:mfb_text="@string/share_my_code"
+            fancy:mfb_textColor="@color/colorWhite"
+            fancy:mfb_textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteLynx"
+    android:nestedScrollingEnabled="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_bordered_view"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/status"
+                    />
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTranslucentWhite50"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/country"/>
+                <TextView
+                    android:id="@+id/countryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTranslucentWhite50"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/division"/>
+                <TextView
+                    android:id="@+id/divisionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTranslucentWhite50"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/ticket_open_date"/>
+                <TextView
+                    android:id="@+id/openDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTranslucentWhite50"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/ticket_limit_date"/>
+                <TextView
+                    android:id="@+id/limitDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTranslucentWhite50"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/ticket_result_date"/>
+                <TextView
+                    android:id="@+id/resultDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text=""/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/futuris_bold"
+            android:textSize="14sp"
+            android:textColor="@color/colorElectromagnetic"
+            android:text="@string/rewards"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_bordered_view"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/pronoWinTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="@string/nb_prono_win"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTranslucentWhite50"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/cashTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/zanicoin_earn_per_bet"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTranslucentWhite50"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/zanicoinTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/zanicoin_earn_per_bet"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTranslucentWhite50"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorElectromagnetic"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="@string/bonus"
+                    />
+                <TextView
+                    android:id="@+id/bonusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBangGrey"
+                    android:fontFamily="@font/helveticaneue_roman"
+                    android:text="@string/amount_zanicoins"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/futuris_bold"
+            android:textSize="14sp"
+            android:textColor="@color/colorElectromagnetic"
+            android:text="@string/menu_rules"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/transparent_bordered_view"
+            android:gravity="center_vertical"
+            android:layout_margin="8dp">
+            
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_siren"/>
+            
+            <TextView
+                android:id="@+id/alertTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:textColor="@color/colorBangGrey"
+                android:textAlignment="center"
+                android:text="@string/matchday_rules_alert"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/transparent_bordered_view"
+            android:gravity="center_vertical"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_ads_video"/>
+
+            <TextView
+                android:id="@+id/videoHelpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:textColor="@color/colorBangGrey"
+                android:textAlignment="center"
+                android:text="@string/video_ads_help"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_bordered_view"
+            android:layout_margin="8dp">
+            <TextView
+                android:id="@+id/rulesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/helveticaneue_roman"
+                android:textColor="@color/colorBangGrey"
+                android:text="@string/rules"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
